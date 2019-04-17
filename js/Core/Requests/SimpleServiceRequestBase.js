@@ -49,7 +49,7 @@ var SimpleServiceRequestBase = (function (_super) {
         return new Promise_1.Promise(function (successDelegate, errorDelegate) {
             var request = _this.BuildXHR();
             //this.ReadResponsePrivate(response);
-            console.log(request);
+            // console.log(request);
             _this.ValidateAndEmitRequest(request).then(function (xhrResponse) {
                 var dom = new ExtensionMethods_1.DOMParser();
                 var xml2js = new ExtensionMethods_1.xml2JsObject();
